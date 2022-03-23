@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Racing API"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Rick and Morty API</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Rick and Morty API</a>      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Search</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <section>
+        <form>
+            <div class="row">
+                <div class="col-auto name">
+                    <label for="name">Name</label> 
+                    <input type="text" class="text" placeholder="Enter Name" id="name">
+                </div>
+                <div class="col-auto status">
+                    <label for="status">Vitality Status</label> 
+                    <input type="text" class="text" placeholder="Dead or Alive?" id="status">
+                </div>
+                <button type="button" class="btn btn-primary" onClick=getData()>Get Info</button>
+            </div>
+        </form>
+        <!-- Rick and Morty Data Table Elements -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Species</th>
+                    <th scope="col">Origin</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row-0">1</th>
+                    <td id="name-0"></td>
+                    <td id="gender-0"></td>
+                    <td id="species-0"></td>
+                    <td id="origin-0"></td>
+                    <td id="image-0"></td>
+                </tr>
+                <tr>
+                    <th scope="row-1">2</th>
+                    <td id="name-1"></td>
+                    <td id="gender-1"></td>
+                    <td id="species-1"></td>
+                    <td id="origin-1"></td>
+                    <td id="image-1"></td>
+                </tr>
+                <tr>
+                    <th scope="row-2">3</th>
+                    <td id="name-2"></td>
+                    <td id="gender-2"></td>
+                    <td id="species-2"></td>
+                    <td id="origin-2"></td>
+                    <td id="image-2"></td>
+                </tr>
+                <tr>
+                    <th scope="row-3">4</th>
+                    <td id="name-3"></td>
+                    <td id="gender-3"></td>
+                    <td id="species-3"></td>
+                    <td id="origin-3"></td>
+                    <td id="image-3"></td>
+                </tr>
+                <tr>
+                    <th scope="row-4">5</th>
+                    <td id="name-4"></td>
+                    <td id="gender-4"></td>
+                    <td id="species-4"></td>
+                    <td id="origin-4"></td>
+                    <td id="image-4"></td>
+                </tr>
+                <tr>
+                    <th scope="row-5">6</th>
+                    <td id="name-5"></td>
+                    <td id="gender-5"></td>
+                    <td id="species-5"></td>
+                    <td id="origin-5"></td>
+                    <td id="image-5"></td>
+                </tr>
+                <tr>
+                    <th scope="row-6">7</th>
+                    <td id="name-6"></td>
+                    <td id="gender-6"></td>
+                    <td id="species-6"></td>
+                    <td id="origin-6"></td>
+                    <td id="image-6"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+</html>
